@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 
+
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -26,7 +27,7 @@ function Board({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = 'Ganador: ' + winner;
+    status = alert('Ganador: ' + winner);
   } else {
     status = 'Siguiente Jugador: ' + (xIsNext ? 'X' : 'O');
   }
@@ -69,7 +70,8 @@ export default function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
-        <ol>{/*TODO*/}</ol>
+       
+        <button>Reiniciar Juego</button>
       </div>
     </div>
   );
