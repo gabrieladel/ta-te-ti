@@ -15,18 +15,12 @@ h1{
   border: rgb(112, 3, 106) 5px solid;
   background-color: rgb(243, 243, 248);
   padding: 3rem;
-/*   width: 100px;
-  height: 30px; */
   font-weight: bolder; 
   font-size: 30px;
   color: rgb(117, 19, 102);
   text-align: center;
-  width: 100px;
-  height: 40px;
-  position: relative;
-  left: 0;
-  top: 0;
 }
+
 .status{
   border: 20px;
   color: white;
